@@ -181,6 +181,10 @@ LogLevel, Timestamp, uid, result는 json_structred 로그에 포함되어 있기 때문에 바
 => game.** 태그를 가진 로그를 info_game_log 테이블과 info_api_log 테이블에 저장한다.
 
 ---
+위의 파일을 도커 컨테이너에서 활용하기 위해서는 Dockerfile을 통해 fluentd 뿐만 아니라 다른 플러그인과 어댑터를 설치해야한다.
+
+Dockerfile과 docker-compose.yml이 프로젝트에 포함되어 있다.
+
 ## docker-compose.yml
 
 ```yml
